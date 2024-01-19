@@ -9,14 +9,14 @@
 # Date: 19 January 2024
 # Prerequisites: Access to Open Data Toronto
 
-#### Read and Download the Data ####
-
-# Work space set up
+#### Work space set up ####
 # install.packages("dplyr")
 # install.packages("opendatatoronto")
 
 library(dplyr)
 library(opendatatoronto)
+
+#### Read and Download the Data ####
 
 # Read Library Branch General Information Data Set
 raw_library_branch_data <-
