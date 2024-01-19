@@ -39,8 +39,8 @@ simulated_library_data$Visits |>
 
 # The "Ward" values are always integers
 simulated_library_data$Ward |>
-  class() == "integer
-"
+  class() == "integer"
+
 # The "Ward" values are exclusively 1-25
 simulated_library_data |>
   unique() == 1:25
