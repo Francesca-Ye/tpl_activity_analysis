@@ -7,7 +7,7 @@
 # Author: Francesca Ye
 # Email: francesca.ye@mail.utoronto.ca
 # Date: 19 January 2024
-# Prerequisites: Acces to Open Data Toronto
+# Prerequisites: Access to Open Data Toronto
 
 #### Read and Download the Data ####
 
