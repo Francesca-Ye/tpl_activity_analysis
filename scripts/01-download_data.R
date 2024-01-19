@@ -20,7 +20,7 @@ library(opendatatoronto)
 
 # Read Library Branch General Information Data Set
 raw_library_branch_data <-
-  show_package("f5aa9b07-da35-45e6-b31f-d6790eb9bd9b")
+  read_csv("https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/f5aa9b07-da35-45e6-b31f-d6790eb9bd9b/resource/1c9e7b16-c8fc-4925-9639-1253b6e02422/download/tpl-branch-general-information-2023.csv")
 
 # Save Library Branch General Information Data Set
 write_csv(
@@ -30,7 +30,7 @@ write_csv(
 
 # Read Library Circulation Data Set
 raw_library_circulation_data <-
-  show_package("80f89d58-fc77-41b4-8d7d-c8f056168a6a")
+  read_csv("https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/80f89d58-fc77-41b4-8d7d-c8f056168a6a/resource/d27bb12b-2575-442f-a410-a720e1de09bf/download/tpl-circulation-annual-by-branch-2012-2022.csv")
 
 # Save Library Circulation Data Set
 write_csv(
@@ -40,7 +40,7 @@ write_csv(
 
 # Read Library Visits Data Set
 raw_library_visits_data <-
-  show_package("932efbb4-644f-401b-9f59-af0b31713f44")
+  read_csv("https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/932efbb4-644f-401b-9f59-af0b31713f44/resource/a6c98238-39c9-4043-b32a-98d113ccba93/download/tpl-visits-annual-by-branch-2012-2022.csv")
 
 # Save Library Visits Data Set
 write_csv(
