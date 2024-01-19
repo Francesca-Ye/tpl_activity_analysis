@@ -15,7 +15,7 @@ library(tidyverse)
 simulated_library_data <-
   tibble(
     # Create a column for each year 25 times to record annual data
-    "Year" = rep(x = 2017:2021, each = 25),
+    "Year" = rep(x = 2018:2022, each = 25),
     # Create a column for each of Toronto's 25 wards for each year
     "Ward" = rep(x = 1:25, times = 5),
     # Create a column for the annual library circulation data of each ward
@@ -57,15 +57,15 @@ simulated_library_data$Year |>
 
 # The "Year" values are exclusively 2017-2021
 simulated_library_data |>
-  unique() == 2017:2021
+  unique() == 2018:2022
 
 #The smallest "Year" value is 2017
 simulated_library_data$Year |>
-  min() == 2017
+  min() == 2018
 
 #The largest "Year" value is 2021
 simulated_library_data$Year |>
-  max() == 2021
+  max() == 2022
 
 # The "Year" values appear exactly 25 times each
 simulated_library_data |>
