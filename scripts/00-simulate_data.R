@@ -7,7 +7,7 @@
 # Date: 19 January 2024
 # Prerequisites: N/A
 
-#### Workspace set up ####
+#### Work space set up ####
 # install.packages("tidyverse")
 library(tidyverse)
 
