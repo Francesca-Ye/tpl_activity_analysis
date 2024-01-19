@@ -11,7 +11,7 @@
 
 #### Read and Download the Data ####
 
-# Install packages
+# Workspace set up
 # install.packages("dplyr")
 # install.packages("opendatatoronto")
 

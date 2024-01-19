@@ -7,11 +7,11 @@
 # Date: 19 January 2024
 # Prerequisites: N/A
 
-#### Package Installation ####
+#### Workspace set up ####
 # install.packages("tidyverse")
 library(tidyverse)
 
-#### Simulated Dataset ####
+#### Simulated Data set ####
 simulated_library_data <-
   tibble(
     # Create a column for each year 25 times to record annual data
