@@ -1,3 +1,16 @@
+#### Preamble ####
+# Purpose: Clean the required data sets from Open Data Toronto in 
+# order to create a report that looks at the annual Toronto Public Library 
+# circulation and work space usage counts by each Toronto Ward in addition to 
+# annual totals of library circulation and visits across the entire city. Uses 
+# "Library Branch General Information", "Library Circulation", and "Library 
+# Visits."
+# Author: Francesca Ye
+# Email: francesca.ye@mail.utoronto.ca
+# Date: 19 January 2024
+# Prerequisites: Access to raw data from Open Data Toronto for "Library Branch
+# information", "Library Circulation", and "Library Visits"
+
 #### Clean and Merge Data Sets ####
 
 # Work space set up ####
@@ -70,6 +83,12 @@ branch_circulation_data <-
   group_by(ward_no, year) |>
   summarise(ward_total = sum(circulation))
 
+# Sum the total annual circulation by year
+annual_circulation_data <-
+  branch_circulation_data |>
+  group_by(year) |>
+  summarise(annual_total = sum(ward_total))
+
 # Merge Branch and Visits Data by Branch Code
 branch_visits_data <-
   merge(cleaned_branch_data, cleaned_visits_data, by = "branch_code", 
@@ -81,3 +100,8 @@ branch_visits_data <-
   group_by(ward_no, year) |>
   summarise(ward_total = sum(visits))
 
+# Sum the total annual visits by year
+annual_visits_data <-
+  branch_visits_data |>
+  group_by(year) |>
+  summarise(annual_total = sum(ward_total))

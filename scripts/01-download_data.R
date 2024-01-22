@@ -1,9 +1,9 @@
 #### Preamble ####
 # Purpose: Download and save the required data sets from Open Data Toronto in 
 # order to create a report that looks at the annual Toronto Public Library 
-# circulation and workspace usage counts by each Toronto Ward and their
-# respective population. Uses "Library Branch General Information", "Library 
-# Circulation", and "Library Visits."
+# circulation and workspace usage counts by each Toronto Ward and city-wide
+# annual sums. Uses "Library Branch General Information", "Library Circulation", 
+# and "Library Visits."
 # Author: Francesca Ye
 # Email: francesca.ye@mail.utoronto.ca
 # Date: 19 January 2024
