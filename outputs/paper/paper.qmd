@@ -7,12 +7,15 @@ email: francesca.ye@mail.utoronto.ca
 prerequisites: "Datasets taken from opensourcetoronto and can be found here: https://open.toronto.ca/catalogue/"
 date: January 22 2024 
 date-format: long
-abstract: 
+abstract: "test"
 format: pdf
 toc: true
 number-sections: true
 bibliography: references.bib
 ---
+```{r}
+library(tinytex)
+```
 
 # Introduction
 
