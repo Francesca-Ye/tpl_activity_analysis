@@ -37,6 +37,12 @@ cleaned_branch_data <-
   cleaned_branch_data |>
   select(branch_code, ward_no, ward_name)
 
+# Save Cleaned Data
+write_csv(
+  x = cleaned_branch_data,
+  file = "~/tplactivityanalysis/outputs/data/00-cleaned_branch_data.csv"
+)
+
 # Clean Circulation Data Set Names
 cleaned_circulation_data <-
   clean_names(raw_library_circulation_data)
@@ -53,6 +59,12 @@ cleaned_circulation_data <-
 cleaned_circulation_data <-
   cleaned_circulation_data |>
   select(year, branch_code, circulation)
+
+# Save Cleaned Data
+write_csv(
+  x = cleaned_circulation_data,
+  file = "~/tplactivityanalysis/outputs/data/01-cleaned_circulation_data.csv"
+)
 
 # Clean Visits Data Set Names
 cleaned_visits_data <-
@@ -71,6 +83,12 @@ cleaned_visits_data <-
   cleaned_visits_data |>
   select(branch_code, year, visits)
 
+# Save Cleaned Data
+write_csv(
+  x = cleaned_visits_data,
+  file = "~/tplactivityanalysis/outputs/data/02-cleaned_visits_data.csv"
+)
+
 #### Merge Data Sets ####
 
 # Merge Branch and Circulation Data by Branch Code
@@ -84,11 +102,23 @@ branch_circulation_data <-
   group_by(ward_no, year) |>
   summarise(ward_total = sum(circulation))
 
+# Save the Merged Data
+write_csv(
+  x = branch_circulation_data,
+  file = "~/tplactivityanalysis/outputs/data/03-annual_circulation_by_ward_data.csv"
+)
+
 # Sum the total annual circulation by year
 annual_circulation_data <-
   branch_circulation_data |>
   group_by(year) |>
   summarise(annual_total = sum(ward_total))
+
+# Save the Merged Data
+write_csv(
+  x = annual_circulation_data,
+  file = "~/tplactivityanalysis/outputs/data/04-annual_circulation_data.csv"
+)
 
 # Merge Branch and Visits Data by Branch Code
 branch_visits_data <-
@@ -101,8 +131,20 @@ branch_visits_data <-
   group_by(ward_no, year) |>
   summarise(ward_total = sum(visits))
 
+#Save the Merged Data
+write_csv(
+  x = branch_visits_data,
+  file = "~/tplactivityanalysis/outputs/data/05-annual_visits_by_ward_data.csv"
+)
+
 # Sum the total annual visits by year
 annual_visits_data <-
   branch_visits_data |>
   group_by(year) |>
   summarise(annual_total = sum(ward_total))
+
+# Save the Merged Data
+write_csv(
+  x = annual_visits_data,
+  file = "~/tplactivityanalysis/outputs/data/06-annual_visits_data.csv"
+)
