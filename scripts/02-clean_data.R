@@ -17,10 +17,12 @@
 #install.packages("tidyverse")
 #install.packages("janitor")
 #install.packages("dplyr")
+#install.packages("readr")
 
 library(tidyverse)
 library(janitor)
 library(dplyr)
+library(readr)
 
 #### Clean Data Sets ####
 
