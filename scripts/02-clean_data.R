@@ -13,7 +13,8 @@
 
 #### Clean and Merge Data Sets ####
 
-# Work space set up ####
+#### Work Space Set Up ####
+
 #install.packages("tidyverse")
 #install.packages("janitor")
 #install.packages("dplyr")
@@ -23,6 +24,26 @@ library(tidyverse)
 library(janitor)
 library(dplyr)
 library(readr)
+
+#### Read in Raw Data ####
+
+raw_library_branch_data <-
+  read_csv(
+    file = "~/tplactivityanalysis/inputs/data/00-unedited_branch_data.csv",
+    show_col_types = FALSE
+  )
+
+raw_library_circulation_data <-
+  read_csv(
+    file = "~/tplactivityanalysis/inputs/data/01-unedited_circulation_data.csv",
+    show_col_types = FALSE
+  )
+
+raw_library_visit_data <-
+  read_csv(
+    file = "~/tplactivityanalysis/inputs/data/02-unedited_visit_data.csv",
+    show_col_types = FALSE
+  )
 
 #### Clean Data Sets ####
 
