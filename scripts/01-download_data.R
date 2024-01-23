@@ -9,7 +9,8 @@
 # Date: 19 January 2024
 # Prerequisites: Access to Open Data Toronto
 
-#### Work space set up ####
+#### Work Space Set Up ####
+
 # install.packages("dplyr")
 # install.packages("opendatatoronto")
 
