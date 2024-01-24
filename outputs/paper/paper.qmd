@@ -227,6 +227,7 @@ Bar graphs were created with `ggplot2` to visualize the cleaned data sets. A bar
 #| echo: false
 #| label: fig-circulation2018
 #| fig-cap: Total 2018 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 circulation_2018 <-
@@ -253,6 +254,7 @@ circulation_2018_stats <-
 #| echo: false
 #| label: fig-circulation2019
 #| fig-cap: Total 2019 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 circulation_2019 <-
@@ -279,6 +281,7 @@ circulation_2019_stats <-
 #| echo: false
 #| label: fig-circulation2020
 #| fig-cap: Total 2020 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 circulation_2020 <-
@@ -305,6 +308,7 @@ circulation_2020_stats <-
 #| echo: false
 #| label: fig-circulation2021
 #| fig-cap: Total 2021 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 circulation_2021 <-
@@ -331,6 +335,7 @@ circulation_2021_stats <-
 #| echo: false
 #| label: fig-circulation2022
 #| fig-cap: Total 2022 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 circulation_2022 <-
@@ -370,6 +375,7 @@ Comparatively, Ward 17 in 2018 had a circulation total of 1568603 to Ward 4 in 2
 #| echo: false
 #| label: fig-visits2018
 #| fig-cap: Total 2018 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 visits_2018 <-
@@ -396,6 +402,7 @@ visits_2018_stats <-
 #| echo: false
 #| label: fig-visits2019
 #| fig-cap: Total 2019 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 visits_2019 <-
@@ -422,6 +429,7 @@ visits_2019_stats <-
 #| echo: false
 #| label: fig-visits2020
 #| fig-cap: Total 2020 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 visits_2020 <-
@@ -448,6 +456,7 @@ visits_2020_stats <-
 #| echo: false
 #| label: fig-visits2021
 #| fig-cap: Total 2021 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 visits_2021 <-
@@ -474,6 +483,7 @@ visits_2021_stats <-
 #| echo: false
 #| label: fig-visits2022
 #| fig-cap: Total 2022 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
+#| fig-pos: "H"
 
 # Filter Data Set for Specific Year Data
 visits_2022 <-
