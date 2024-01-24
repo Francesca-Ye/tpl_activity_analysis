@@ -75,6 +75,7 @@ cleaned_circulation_data <-
   subset(cleaned_circulation_data, !(branch_code %in% c("AL", "BKONE", "BKTWO", "DS", "HLS", "IL", "LD", "ME", "OS", "PR", "SB", "VIR")))
 
 # Remove 2012 - 2017 Circulation Data
+# Referenced function structure from https://www.statology.org/r-remove-rows-from-data-frame-condition
 cleaned_circulation_data <-
   subset(cleaned_circulation_data, !(year %in% c(2012:2017)))
 
@@ -98,6 +99,7 @@ cleaned_visits_data <-
   subset(cleaned_visits_data, !(branch_code %in% c("AL", "BKONE", "BKTWO", "DS", "HLS", "IL", "LD", "ME", "OS", "PR", "SB", "VIR")))
 
 # Remove 2012 - 2017 Visits Data
+# Referenced function structure from https://www.statology.org/r-remove-rows-from-data-frame-condition
 cleaned_visits_data <-
   subset(cleaned_visits_data, !(year %in% c(2012:2017)))
 
@@ -115,6 +117,7 @@ write_csv(
 #### Merge Data Sets ####
 
 # Merge Branch and Circulation Data by Branch Code
+# Referenced function structure from https://www.statology.org/r-merge-by-rownames/
 branch_circulation_data <-
   merge(cleaned_branch_data, cleaned_circulation_data, by = "branch_code", 
         all.x = TRUE)
@@ -144,6 +147,7 @@ write_csv(
 )
 
 # Merge Branch and Visits Data by Branch Code
+# Referenced function structure from https://www.statology.org/r-merge-by-rownames/
 branch_visits_data <-
   merge(cleaned_branch_data, cleaned_visits_data, by = "branch_code", 
         all.x = TRUE)

@@ -1,7 +1,6 @@
 #### Preamble ####
 # Purpose: Create a simulated data set that looks at the annual Toronto Public 
-# Library circulation and workspace usage counts by each Toronto Ward and their
-# respective population.
+# Library circulation and work space usage counts by each Toronto ward.
 # Author: Francesca Ye
 # Email: francesca.ye@mail.utoronto.ca
 # Date: 19 January 2024
