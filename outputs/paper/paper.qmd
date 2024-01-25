@@ -36,43 +36,43 @@ library(knitr)
 
 cleaned_branch_data <-
   read_csv(
-    file = "~/tplactivityanalysis/outputs/data/00-cleaned_branch_data.csv",
+    file = "~/tpl_activity_analysis/outputs/data/00-cleaned_branch_data.csv",
     show_col_types = FALSE
   )
 
 cleaned_circulation_data <-
   read_csv(
-    file = "~/tplactivityanalysis/outputs/data/01-cleaned_circulation_data.csv",
+    file = "~/tpl_activity_analysis/outputs/data/01-cleaned_circulation_data.csv",
     show_col_types = FALSE
   )
 
 cleaned_visits_data <-
   read_csv(
-    file = "~/tplactivityanalysis/outputs/data/02-cleaned_visits_data.csv",
+    file = "~/tpl_activity_analysis/outputs/data/02-cleaned_visits_data.csv",
     show_col_types = FALSE
   )
 
 branch_circulation_data <-
   read_csv(
-    file = "~/tplactivityanalysis/outputs/data/03-annual_circulation_by_ward_data.csv",
+    file = "~/tpl_activity_analysis/outputs/data/03-annual_circulation_by_ward_data.csv",
     show_col_types = FALSE
   )
 
 annual_circulation_data <-
   read_csv(
-    file = "~/tplactivityanalysis/outputs/data/04-annual_circulation_data.csv",
+    file = "~/tpl_activity_analysis/outputs/data/04-annual_circulation_data.csv",
     show_col_types = FALSE
   )
 
 branch_visits_data <-
   read_csv(
-    file = "~/tplactivityanalysis/outputs/data/05-annual_visits_by_ward_data.csv",
+    file = "~/tpl_activity_analysis/outputs/data/05-annual_visits_by_ward_data.csv",
     show_col_types = FALSE
   )
 
 annual_visits_data <-
   read_csv(
-    file = "~/tplactivityanalysis/outputs/data/06-annual_visits_data.csv",
+    file = "~/tpl_activity_analysis/outputs/data/06-annual_visits_data.csv",
     show_col_types = FALSE
   )
 ```
