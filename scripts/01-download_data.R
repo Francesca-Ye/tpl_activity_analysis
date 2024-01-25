@@ -26,7 +26,7 @@ raw_library_branch_data <-
 # Save Library Branch General Information Data Set
 write_csv(
   x = raw_library_branch_data,
-  file = "~/tplactivityanalysis/inputs/data/00-unedited_branch_data.csv"
+  file = "~/tpl_activity_analysis/inputs/data/00-unedited_branch_data.csv"
 )
 
 # Read Library Circulation Data Set
@@ -36,7 +36,7 @@ raw_library_circulation_data <-
 # Save Library Circulation Data Set
 write_csv(
   x = raw_library_circulation_data,
-  file = "~/tplactivityanalysis/inputs/data/01-unedited_circulation_data.csv"
+  file = "~/tpl_activity_analysis/inputs/data/01-unedited_circulation_data.csv"
 )
 
 # Read Library Visits Data Set
@@ -46,5 +46,5 @@ raw_library_visits_data <-
 # Save Library Visits Data Set
 write_csv(
   x = raw_library_visits_data,
-  file = "~/tplactivityanalysis/inputs/data/02-unedited_visit_data.csv"
+  file = "~/tpl_activity_analysis/inputs/data/02-unedited_visit_data.csv"
 )

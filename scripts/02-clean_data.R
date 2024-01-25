@@ -29,19 +29,19 @@ library(readr)
 
 raw_library_branch_data <-
   read_csv(
-    file = "~/tplactivityanalysis/inputs/data/00-unedited_branch_data.csv",
+    file = "~/tpl_activity_analysis/inputs/data/00-unedited_branch_data.csv",
     show_col_types = FALSE
   )
 
 raw_library_circulation_data <-
   read_csv(
-    file = "~/tplactivityanalysis/inputs/data/01-unedited_circulation_data.csv",
+    file = "~/tpl_activity_analysis/inputs/data/01-unedited_circulation_data.csv",
     show_col_types = FALSE
   )
 
 raw_library_visit_data <-
   read_csv(
-    file = "~/tplactivityanalysis/inputs/data/02-unedited_visit_data.csv",
+    file = "~/tpl_activity_analysis/inputs/data/02-unedited_visit_data.csv",
     show_col_types = FALSE
   )
 
@@ -63,7 +63,7 @@ cleaned_branch_data <-
 # Save Cleaned Data
 write_csv(
   x = cleaned_branch_data,
-  file = "~/tplactivityanalysis/outputs/data/00-cleaned_branch_data.csv"
+  file = "~/tpl_activity_analysis/outputs/data/00-cleaned_branch_data.csv"
 )
 
 # Clean Circulation Data Set Names
@@ -87,7 +87,7 @@ cleaned_circulation_data <-
 # Save Cleaned Data
 write_csv(
   x = cleaned_circulation_data,
-  file = "~/tplactivityanalysis/outputs/data/01-cleaned_circulation_data.csv"
+  file = "~/tpl_activity_analysis/outputs/data/01-cleaned_circulation_data.csv"
 )
 
 # Clean Visits Data Set Names
@@ -111,7 +111,7 @@ cleaned_visits_data <-
 # Save Cleaned Data
 write_csv(
   x = cleaned_visits_data,
-  file = "~/tplactivityanalysis/outputs/data/02-cleaned_visits_data.csv"
+  file = "~/tpl_activity_analysis/outputs/data/02-cleaned_visits_data.csv"
 )
 
 #### Merge Data Sets ####
@@ -131,7 +131,7 @@ branch_circulation_data <-
 # Save the Merged Data
 write_csv(
   x = branch_circulation_data,
-  file = "~/tplactivityanalysis/outputs/data/03-annual_circulation_by_ward_data.csv"
+  file = "~/tpl_activity_analysis/outputs/data/03-annual_circulation_by_ward_data.csv"
 )
 
 # Sum the total annual circulation by year
@@ -143,7 +143,7 @@ annual_circulation_data <-
 # Save the Merged Data
 write_csv(
   x = annual_circulation_data,
-  file = "~/tplactivityanalysis/outputs/data/04-annual_circulation_data.csv"
+  file = "~/tpl_activity_analysis/outputs/data/04-annual_circulation_data.csv"
 )
 
 # Merge Branch and Visits Data by Branch Code
@@ -161,7 +161,7 @@ branch_visits_data <-
 #Save the Merged Data
 write_csv(
   x = branch_visits_data,
-  file = "~/tplactivityanalysis/outputs/data/05-annual_visits_by_ward_data.csv"
+  file = "~/tpl_activity_analysis/outputs/data/05-annual_visits_by_ward_data.csv"
 )
 
 # Sum the total annual visits by year
@@ -173,5 +173,5 @@ annual_visits_data <-
 # Save the Merged Data
 write_csv(
   x = annual_visits_data,
-  file = "~/tplactivityanalysis/outputs/data/06-annual_visits_data.csv"
+  file = "~/tpl_activity_analysis/outputs/data/06-annual_visits_data.csv"
 )
