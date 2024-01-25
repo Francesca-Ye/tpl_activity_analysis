@@ -5,7 +5,7 @@ author:
   - Francesca Ye
 email: francesca.ye@mail.utoronto.ca
 prerequisites: "Datasets taken from opensourcetoronto and can be found here: https://open.toronto.ca/catalogue/"
-date: January 22 2024 
+date: today 
 date-format: long
 abstract: "Toronto Public Library data sets on branch information, annual circulation, and annual visits were used to examine library usage patterns by ward between 2018 and 2022. Based on the analysis of annual circulation and visits by ward over this five year period, there is evidence that library usage significantly dropped in 2020 when comparing values to 2018 and 2019. Looking beyond the initial outbreak of COVID-19, it also appears that library usage is beginning to recover, although not to pre-pandemic levels, which highlight differences in pre and post-pandemic library usage. It would be beneficial to expand the scope of the analysis to more years before and after 2020 to get a larger sample of library usage patterns in addition to analysis of monthly circulation and visitiation data against a timeline of government mandated COVID-19 measures."
 format: pdf
@@ -228,6 +228,7 @@ Bar graphs were created with `ggplot2`[@ggplot2] to visualize the cleaned data s
 #| label: fig-circulation2018
 #| fig-cap: Total 2018 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 circulation_2018 <-
@@ -255,6 +256,7 @@ circulation_2018_stats <-
 #| label: fig-circulation2019
 #| fig-cap: Total 2019 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 circulation_2019 <-
@@ -282,6 +284,7 @@ circulation_2019_stats <-
 #| label: fig-circulation2020
 #| fig-cap: Total 2020 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 circulation_2020 <-
@@ -309,6 +312,7 @@ circulation_2020_stats <-
 #| label: fig-circulation2021
 #| fig-cap: Total 2021 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 circulation_2021 <-
@@ -336,6 +340,7 @@ circulation_2021_stats <-
 #| label: fig-circulation2022
 #| fig-cap: Total 2022 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 circulation_2022 <-
@@ -376,6 +381,7 @@ Comparatively, Ward 17 in 2018 had a circulation total of 1568603 to Ward 4 in 2
 #| label: fig-visits2018
 #| fig-cap: Total 2018 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 visits_2018 <-
@@ -403,6 +409,7 @@ visits_2018_stats <-
 #| label: fig-visits2019
 #| fig-cap: Total 2019 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 visits_2019 <-
@@ -430,6 +437,7 @@ visits_2019_stats <-
 #| label: fig-visits2020
 #| fig-cap: Total 2020 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 visits_2020 <-
@@ -457,6 +465,7 @@ visits_2020_stats <-
 #| label: fig-visits2021
 #| fig-cap: Total 2021 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 visits_2021 <-
@@ -484,6 +493,7 @@ visits_2021_stats <-
 #| label: fig-visits2022
 #| fig-cap: Total 2022 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
+#| fig-height: 2.2
 
 # Filter Data Set for Specific Year Data
 visits_2022 <-
