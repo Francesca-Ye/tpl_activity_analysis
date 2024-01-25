@@ -17,7 +17,7 @@ This repo is structured by:
 
 1.  Run `scripts/00-download_data.R` to download the raw data sets
 2.  Run `scripts/01-data_cleaning.R` to generate the cleaned data sets
-3.  Run `outputs/paper/covid_clinic.qmd` to generate the PDF of the paper
+3.  Run `outputs/paper.qmd` to generate the PDF of the paper
 
 ## Statement on LLM Usage
 
