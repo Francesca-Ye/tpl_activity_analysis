@@ -1,10 +1,9 @@
 ---
-title: "Toronto's Most Studious Wards:  An Analysis of Annual Toronto Public Library's Circulation and Visits by Wards Prior to and Post-COVID"
-subtitle: "Data Visualization in R"
+title: "Toronto's Most Studious Wards: An Analysis of Annual Toronto Public Library's Circulation and Visits by Wards Pre and Post-COVID"
 author:
   - Francesca Ye
 email: francesca.ye@mail.utoronto.ca
-prerequisites: "Datasets taken from opensourcetoronto and can be found here: https://open.toronto.ca/catalogue/"
+prerequisites: "Datasets taken from opensourcetoronto and can be found here: https://open.toronto.ca/catalogue/. In order to render this file and run the code, 01-download_data.R and 02-clean_data.R need to be ran."
 date: today 
 date-format: long
 abstract: "Toronto Public Library data sets on branch information, annual circulation, and annual visits were used to examine library usage patterns by ward between 2018 and 2022. Based on the analysis of annual circulation and visits by ward over this five year period, there is evidence that library usage significantly dropped in 2020 when comparing values to 2018 and 2019. Looking beyond the initial outbreak of COVID-19, it also appears that library usage is beginning to recover, although not to pre-pandemic levels, which highlight differences in pre and post-pandemic library usage. It would be beneficial to expand the scope of the analysis to more years before and after 2020 to get a larger sample of library usage patterns in addition to analysis of monthly circulation and visitiation data against a timeline of government mandated COVID-19 measures."
