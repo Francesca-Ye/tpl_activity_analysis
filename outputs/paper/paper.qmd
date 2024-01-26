@@ -356,7 +356,7 @@ circulation_2022 |>
   geom_bar(stat = "identity") +
   theme_minimal() +
   scale_x_continuous(breaks = 1:25) +
-  scale_y_continuous(limits = c(0, 2400000), breaks = seq(0, 2400000, by = 200000)) +
+  scale_y_continuous(limits = c(0, 1600000), breaks = seq(0, 1600000, by = 200000)) +
   labs(x = "Ward Number", y = "Total Annual Circulation")
 
 # Calculate Mean and Median
@@ -538,7 +538,7 @@ Ward 11 had visit totals of 2,349,923 in 2018, 435,484 in 2021, and 1,163,179 in
 #| label: fig-annualcirculation
 #| fig-cap: City-Wide Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Year
 #| fig-pos: "H"
-#| fig-height: 2.5
+#| fig-height: 3.5
 
 # Create a new column of the annual_total values in millions
 annual_circulation_data <- mutate(annual_circulation_data, million = annual_total/1000000)
@@ -561,7 +561,7 @@ annual_circulation_data |>
 #| label: fig-annualvisits
 #| fig-cap: City-Wide Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Year
 #| fig-pos: "H"
-#| fig-height: 2.5
+#| fig-height: 3.5
 
 # Create a new column of the annual_total values in millions
 annual_visits_data <- mutate(annual_visits_data, million = annual_total/1000000)
