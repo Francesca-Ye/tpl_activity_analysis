@@ -1,4 +1,4 @@
-# Analysis of Annual Toronto Public Library's Circulation and Visits by Wards Prior to and Post-COVID
+# Toronto's Most Studious Wards: An Analysis of Annual Toronto Public Library's Circulation and Visits by Wards Pre and Post-COVID
 
 ## Overview
 
