@@ -228,12 +228,13 @@ Bar graphs were created with `ggplot2`[@tidyverse] to visualize the cleaned data
 #| label: fig-circulation2018
 #| fig-cap: Total 2018 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 circulation_2018 <-
   subset(branch_circulation_data, year == 2018)
 
+# Create Bar Graph
 circulation_2018 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -256,12 +257,13 @@ circulation_2018_stats <-
 #| label: fig-circulation2019
 #| fig-cap: Total 2019 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 circulation_2019 <-
   subset(branch_circulation_data, year == 2019)
 
+# Create Bar Graph
 circulation_2019 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -284,12 +286,13 @@ circulation_2019_stats <-
 #| label: fig-circulation2020
 #| fig-cap: Total 2020 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 circulation_2020 <-
   subset(branch_circulation_data, year == 2020)
 
+# Create Bar Graph
 circulation_2020 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -312,12 +315,13 @@ circulation_2020_stats <-
 #| label: fig-circulation2021
 #| fig-cap: Total 2021 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 circulation_2021 <-
   subset(branch_circulation_data, year == 2021)
 
+# Create Bar Graph
 circulation_2021 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -340,12 +344,13 @@ circulation_2021_stats <-
 #| label: fig-circulation2022
 #| fig-cap: Total 2022 Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 circulation_2022 <-
   subset(branch_circulation_data, year == 2022)
 
+# Create Bar Graph
 circulation_2022 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -380,12 +385,13 @@ Comparatively, Ward 17 in 2018 had a circulation total of 1,568,603 to Ward 4 in
 #| label: fig-visits2018
 #| fig-cap: Total 2018 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 visits_2018 <-
   subset(branch_visits_data, year == 2018)
 
+# Create Bar Graph
 visits_2018 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -408,12 +414,13 @@ visits_2018_stats <-
 #| label: fig-visits2019
 #| fig-cap: Total 2019 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 visits_2019 <-
   subset(branch_visits_data, year == 2019)
 
+# Create Bar Graph
 visits_2019 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -436,12 +443,13 @@ visits_2019_stats <-
 #| label: fig-visits2020
 #| fig-cap: Total 2020 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 visits_2020 <-
   subset(branch_visits_data, year == 2020)
 
+# Create Bar Graph
 visits_2020 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -464,12 +472,13 @@ visits_2020_stats <-
 #| label: fig-visits2021
 #| fig-cap: Total 2021 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 visits_2021 <-
   subset(branch_visits_data, year == 2021)
 
+# Create Bar Graph
 visits_2021 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -492,12 +501,13 @@ visits_2021_stats <-
 #| label: fig-visits2022
 #| fig-cap: Total 2022 Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Ward
 #| fig-pos: "H"
-#| fig-height: 2.2
+#| fig-height: 2.5
 
 # Filter Data Set for Specific Year Data
 visits_2022 <-
   subset(branch_visits_data, year == 2022)
 
+# Create Bar Graph
 visits_2022 |>
   ggplot(aes(x = ward_no, y = ward_total)) +
   geom_bar(stat = "identity") +
@@ -521,8 +531,56 @@ Between 2018 and 2022, Ward 11 - University-Rosedale had the highest annual tota
 
 Ward 11 had visit totals of 2,349,923 in 2018, 435,484 in 2021, and 1,163,179 in 2022. By viewing the highest ward total for each year, it can be concluded that visitation decreased at a peak in 2021 across all wards. By looking at the highest values of 2018, 2020, and 2020, there is evidence the annual visit total by ward hit its trough in 2021.
 
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| label: fig-annualcirculation
+#| fig-cap: City-Wide Annual Circulation of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Year
+#| fig-pos: "H"
+#| fig-height: 2.5
+
+# Create a new column of the annual_total values in millions
+annual_circulation_data <- mutate(annual_circulation_data, million = annual_total/1000000)
+
+annual_circulation_data |>
+  ggplot(aes(x = year, y = million)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  scale_x_continuous(breaks = 2018:2022) + 
+  scale_y_continuous(breaks = seq(1, 23, by = 1)) +
+  labs(x = "Year", y = "Total Annual Circulation (In Millions)") +
+  # Code referenced from: https://ggplot2.tidyverse.org/reference/geom_smooth.html
+  geom_smooth(method = "loess", se = FALSE, color = "red")
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| label: fig-annualvisits
+#| fig-cap: City-Wide Annual Visits of Toronto Public Library Branches (Physical and Fixed Location Branches Only) by Year
+#| fig-pos: "H"
+#| fig-height: 2.5
+
+# Create a new column of the annual_total values in millions
+annual_visits_data <- mutate(annual_visits_data, million = annual_total/1000000)
+
+annual_visits_data |>
+  ggplot(aes(x = year, y = million)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  scale_x_continuous(breaks = 2018:2022) + 
+  scale_y_continuous(breaks = seq(1, 23, by = 1)) +
+  labs(x = "Year", y = "Total Annual Visits (In Millions)") +
+  # Code referenced from: https://ggplot2.tidyverse.org/reference/geom_smooth.html
+  geom_smooth(method = "loess", se = FALSE, color = "red")
+```
+
 ### City-Wide Annual Circulation and Visits
-Tables that provide a summary of the city-wide total visits (@tbl-tplannualvisits) and total circulation (@tbl-tplannualcirculation) for each year. Annual circulation and visitation metrics have high standard deviations of 5,502,796 and 6,349,144, respectively. The high standard deviations imply that the overall annual variance of these metrics is high, therefore indicating values are spread out from the mean. This is seen in the graphs for both usage metrics as 2020 and 2021 reveal significantly smaller values compared to 2018 and 2019. By viewing the annual data, it is clear that the graphs represent the annual data after comparing the table to the aforementioned sections. 
+The graphs above provide a summary of the city-wide total visits (@tbl-tplannualvisits) and total circulation (@tbl-tplannualcirculation) for each year with the addition of a trend line. Annual circulation and visitation metrics have high standard deviations of 5,502,796 and 6,349,144, respectively. The high standard deviations imply that the overall annual variance of these metrics is high, therefore indicating values are spread out from the mean. This is seen in the graphs for both usage metrics as 2020 and 2021 reveal significantly smaller values compared to 2018 and 2019. 
+
+In @fig-annualcirculation, the trend line appears to highlight 2018 and 2019 having relatively annual circulation at roughly the same total followed by a significant decrease in 2020 with some recovery in latter years. This further corroborates the patterns seen in the annual circulation graphs by ward which also highlight this trough pattern. @fig-annualvisits shows a similar pattern with the exception of 2021 having the lowest total value. The pre and post-COVID-19 years for annual visits by year closely corresponed to the patterns seen in annual circulation by year. This is due to 2018-2019 being peaks with some increase in totals year-over-year after 2020 but not yet returned to pre-COVID-19 levels. By viewing the annual data, it is clear that the graphs representing the data by ward closely follow the patterns found in the data by year.
 
 ```{r}
 #| warning: false
@@ -541,11 +599,13 @@ sd_visits <-
 ## Discussion
 Looking over the five years of data in this report, both annual circulation and visits by ward appear to be going through a trough-shaped pattern. For both circulation and visits, 2018 and 2019 data hovered around roughly the same numbers with 2019 having slightly lower numbers. Annual circulation in this data appears to have bottomed out in 2020 where the lowest transactions were recorded across all wards. Afterwards, in 2021 and 2022, circulation totals across all wards appear to be slowly increasing; however, they have not returned to pre-2020 levels. 2021 accounted for the lowest visit total across the wards after a sharp decline in visits in 2020 whilst 2022 highlighted an increase in visit totals across all wards to levels just under pre-2020. 
 
-Although this report does not specifically focus on proving causation between the COVID-19 pandemic and library usage metrics, it is clear that the annual totals of these metrics do have differences pre and post-pandemic. The COVID-19 pandemic’s lockdown and social distancing measures could be a contributing factor to the sharp decline in total circulation and visits to libraries across all wards in Toronto seen in 2020 and 2021. As indicated by the Government of Ontario, public libraries were subject to lockdown measures which could have affected patrons' ability to visit and check out material. It could also be possible that patrons’ behaviour has changed post-2020 regarding public spaces and shared materials. 
+Although this report does not specifically focus on proving causation between the COVID-19 pandemic and library usage metrics, it is clear that the annual totals of these metrics do have differences pre and post-pandemic. The COVID-19 pandemic’s lockdown and social distancing measures could be a contributing factor to the sharp decline in total circulation and visits to libraries across all wards in Toronto seen in 2020 and 2021. As indicated by the Government of Ontario, public libraries were subject to lockdown measures which could have affected patrons' ability to visit and check out material [@ongov]. It could also be possible that patrons’ behaviour has changed post-2020 regarding public spaces and shared materials. 
 
 There are potential measurement errors in the data sets used in this report. As previously noted, the visit totals were collected by sensors at the entrances of library branches during scheduled operating hours. This means that it is possible individuals were counted multiple times in a day due to exiting and reentering. It is also important to note that the visit data set is incomplete. For 100 physical branches over five years of collections, there should be 500 rows; however, only 492 are present. 2018 data for St. Clair/Silverthorn, 2021 data for the City Hall Branch, 2021 data for Swansea Memorial, 2021-2022 data for Mount Pleasant, and 2019-2021 data for Wychwood were missing from the data set. For the purposes of analysis, no null or 0 value was created as a placeholder for the missing data to not skew the results. This is definitely a limitation to the data since ward totals that did not have this data present could be skewed lower due to the absence of data if it was omitted from the data set while the branches were still operating. Although both data sets only record annual data, the frequency of the data collection and entry methods are unknown which could be another possible limitation. As well, since the data sets only provided data up to 2022, the long-term total circulation and visit trends can not be analyzed. 
 
-Limitations also exist in the analysis of the data sets in this report. While this report does analyze and graph the annual ward totals of library circulation and visits, expanding the chronological scope of the report could provide greater insight into whether or not post-2020 data was directly affected by the pandemic and not other factors. The report organizes data by ward and therefore it might have been beneficial to compare total circulation and visits to demographic ward data to rule out other factors aside from the pandemic as causes of the severe decrease seen in 2020. Annual data is also used for the report and it is worth investigating library usage metrics against periods of lockdown or mandated social distancing on a daily or monthly basis across the same five-year period. However, monthly and daily data is not available on Open Data Toronto [@opendatatoronto]. This could further support the assertion that there were changes in total circulation and visits that can be categorized as pre and post-pandemic. 
+Limitations also exist in the analysis of the data sets in this report. While this report does analyze and graph the annual ward totals of library circulation and visits, expanding the chronological scope of the report could provide greater insight into whether or not post-2020 data was directly affected by the pandemic and not other factors. The report organizes data by ward and therefore it might have been beneficial to compare total circulation and visits to demographic ward data to rule out other factors aside from the pandemic as causes of the severe decrease seen in 2020. Annual data is also used for the report and it is worth investigating library usage metrics against periods of lockdown or mandated social distancing on a daily or monthly basis across the same five-year period. However, monthly and daily data is not available on Open Data Toronto [@opendatatoronto]. This could further support the assertion that there were changes in total circulation and visits that can be categorized as pre and post-pandemic.
+
+Reflecting on the secondary data that was conducted prior to the creation of this report, the data analysed does reflect the research findings of Jamali and Haider. They concluded that physical loans had significantly decreased [@libraryusage]. Although this report focused on all circulation associated to a Toronto Public Library branch with a physical and fixed location, it also found that circulation dropped by over 1,200,000 million in 2020 at its lowest in comparison to 2018. When considering the decrease in circulation and visits, this results in questions about overall quality of life Torontonians have post-COVID-19. As researched by Chow and Tian, public libraries are thought to improve different measures of quality of life [@libraryimpact]. With Torontonians visiting and borrowing from libraries in fewer numbers, it calls into question whether or not these usage patterns have also resulted in poorer social community health. Further research could be done to identify if there is a correlation between quality of life and library usage with special attention towards the social effects the pandemic due to the closure of libraries and other community services.
 
 ## Conclusion
 
